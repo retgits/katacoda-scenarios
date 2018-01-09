@@ -1,1 +1,1 @@
-Welcome to your first Katacoda Scenario!
+We think it is awesome that you want to get started with [Project Flogo](http://flogo.io)! To get started you don’t even need to install anything at all! In this Quickstart we'll walk you through the basics of visually creating an ultra light microservice. 
