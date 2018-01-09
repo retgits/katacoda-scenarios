@@ -1,0 +1,3 @@
+We think it is awesome that you want to get started with [Project Flogo](http://flogo.io)! To get started you don’t even need to install anything! In this scenario we'll walk you through the steps to visually create a new microservice using the Project Flogo Web UI.
+
+When you're done with the tutorial here, you can follow the steps in our [docs](https://tibcosoftware.github.io/flogo/getting-started/quickstart/) to set up a local copy of the Web UI using Docker.
