@@ -1,1 +1,4 @@
-Where flows represent the logic of the service, a trigger gives the flow the option to start. Out of the box Project Flogo comes with a bunch of triggers and if none of them fit your needs, you can either create new ones yourself or look at the [community](https://tibcosoftware.github.io/flogo/showcases/). For now we’ll choose the Receive HTTP Message as the trigger which means our microservice will listen to incoming HTTP messages.
+Awesome! So now we have a flow where we can add logic to. Let's start with adding a trigger. Where flows represent the logic of the service, a trigger gives the flow the option to start. Out of the box Project Flogo comes with a bunch of triggers and if none of them fit your needs, you can either create new ones yourself or look at the [community](https://tibcosoftware.github.io/flogo/showcases/). 
+
+#### Add a new trigger
+On the left hand side of the screen you should see a dotted box with a `+` sign in it. When you click there you'll be asked to select a trigger to get started. For now we’ll choose the **Receive HTTP Message**, which means our microservice will listen to incoming HTTP messages.

@@ -1,6 +1,7 @@
 {
+    "icon": "fa-golang",
     "pathwayTitle": "Project Flogo",
-    "title": "Getting started with the Web UI",
+    "title": "Getting started with the Flogo Web UI",
     "description": "Learn how to visually create an ultralight microservice using the Project Flogo Web UI",
     "difficulty": "beginner",
     "time": "15 minutes",
@@ -19,7 +20,7 @@
                 "text": "step3.md"
             },
             {
-                "title": "Add a trigger",
+                "title": "Add a new trigger",
                 "text": "step4.md"
             },
             {
@@ -27,21 +28,25 @@
                 "text": "step5.md"
             },
             {
-                "title": "Add a log activity",
+                "title": "Add Flow params",
                 "text": "step6.md"
             },
             {
-                "title": "Add a reply handler",
+                "title": "Add a log activity",
                 "text": "step7.md"
             },
             {
-                "title": "Build your app",
+                "title": "Add a reply handler",
                 "text": "step8.md"
+            },
+            {
+                "title": "Build your app",
+                "text": "step9.md"
             }
         ],
         "intro": {
             "text": "intro.md",
-            "code": "startFlogo.sh",
+            "code": "introCode.sh",
             "credits": ""
         },
         "finish": {
@@ -52,8 +57,7 @@
         "showdashboard": true,
         "dashboards": [{"name": "Web UI", "port": 3303}],
         "uilayout": "terminal-iframe",
-        "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\u001b[m\r\n",
-        "icon": "fa-golang"
+        "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\u001b[m\r\n"
     },
     "backend": {
         "imageid": "docker"

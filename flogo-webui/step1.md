@@ -1,4 +1,4 @@
-Usually installing the Flogo Web UI is quite simple and requires nothing more than Docker pre-installed on your machine to fetch the Docker image. As you can see in the terminal on the right side of the screen, we've already began launching the container for you.
+Installing the Flogo Web UI is quite simple and requires nothing more than having Docker installed on your machine. As you can see in the terminal on the right side of the screen, we've already began launching the container for you, to give you a flying start!
 
 To launch the container we used the below command:
 
@@ -6,7 +6,13 @@ To launch the container we used the below command:
 docker run -it -p 3303:3303 flogo/flogo-docker:latest eula-accept
 ```
 
-Everything is now fully configured and awaiting your first steps in the world of Project Flogo. Port 3303 opens the Web UI!
+It will take a few seconds to download the image and start the container for you, so please bare with us until you see
+
+```
+[success] open http://localhost:3303 in your browser
+```
+
+Everything is now fully configured and awaiting your first steps in the world of Project Flogo.
 
 #### Load Dashboard
 
