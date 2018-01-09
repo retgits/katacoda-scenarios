@@ -1,3 +1,5 @@
+Usually installing the Flogo Web UI is quite simple and requires nothing more than Docker pre-installed on your machine to fetch the Docker image. As you can see in the terminal on the right side of the screen, we've already began launching the container for you.
+
 To launch the container we used the below command:
 
 ```
@@ -8,6 +10,6 @@ Everything is now fully configured and awaiting your first steps in the world of
 
 #### Load Dashboard
 
-You can load the Flogo Web UI via the following URL https://[[HOST_SUBDOMAIN]]-3303-[[KATACODA_HOST]].environments.katacoda.com/
+To launch Flogo WebUI simply open your favorite web browser, and navigate to https://[[HOST_SUBDOMAIN]]-3303-[[KATACODA_HOST]].environments.katacoda.com/ or using the `Web UI` tab from the console. You’ll see our mascot Flynn there to greet you!
 
 In the next steps, you'll use the Web UI to create your new microservice.

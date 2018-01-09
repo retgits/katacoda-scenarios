@@ -1,0 +1,1 @@
+Let’s build a new microservice and add some logic to it. On the welcome page, click on the big blue button that says New and choose Microservice. At the top of the screen you can give your new microservice a name and even add a description. The name you enter will also be the name of your executable, so you might want to give it a meaningful name.

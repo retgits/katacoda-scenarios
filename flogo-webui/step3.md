@@ -1,0 +1,1 @@
+Flows represent the logic of our microservice, and since there are no flows yet our service wouldn't do that much (actually it wouldn't do anything at all). Let’s create a flow by clicking the blue button in the middle of the screen. After naming your flow and optionally adding a description, simply press Create.

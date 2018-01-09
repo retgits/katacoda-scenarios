@@ -1,0 +1,1 @@
+After all this is done, click on the `<` at the top of the screen to go back to the page where you added your flows. Now we can build an executable out of it to run it on your machine. From the page you're on right now select build and choose the target plaform for which you want to build an executable.

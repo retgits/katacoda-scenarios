@@ -1,0 +1,1 @@
+The last step is to add a reply handler and set the result code to 200. You can do that in the same way we just added the Log activity in the previous step. Click on the `+` button and choose the **Reply** activity. For now we'll set the resultcode to 200 manually, in other scenarios we'll talk about more complex mappings.

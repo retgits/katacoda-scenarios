@@ -23,17 +23,25 @@
                 "text": "step4.md"
             },
             {
-                "title": "Add a log activity",
+                "title": "Configure the trigger",
                 "text": "step5.md"
             },
             {
-                "title": "Build your app",
+                "title": "Add a log activity",
                 "text": "step6.md"
+            },
+            {
+                "title": "Add a reply handler",
+                "text": "step7.md"
+            },
+            {
+                "title": "Build your app",
+                "text": "step8.md"
             }
         ],
         "intro": {
             "text": "intro.md",
-            "courseData": "courseBase.sh",
+            "code": "startFlogo.sh",
             "credits": ""
         },
         "finish": {
@@ -44,7 +52,8 @@
         "showdashboard": true,
         "dashboards": [{"name": "Web UI", "port": 3303}],
         "uilayout": "terminal-iframe",
-        "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\u001b[m\r\n"
+        "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\u001b[m\r\n",
+        "icon": "fa-golang"
     },
     "backend": {
         "imageid": "coreos"
