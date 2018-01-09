@@ -56,6 +56,6 @@
         "icon": "fa-golang"
     },
     "backend": {
-        "imageid": "coreos"
+        "imageid": "docker"
     }
 }
