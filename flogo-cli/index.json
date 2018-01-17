@@ -1,0 +1,31 @@
+{
+    "icon": "fa-golang",
+    "pathwayTitle": "Project Flogo",
+    "title": "Getting started with the Flogo CLI",
+    "description": "Learn how to use the Flogo CLI to construct ultra light microservices",
+    "difficulty": "beginner",
+    "time": "5 - 15 minutes",
+    "details": {
+        "steps": [
+            {
+                "title": "Go get Flogo",
+                "text": "step1.md"
+            }
+        ],
+        "intro": {
+            "text": "intro.md",
+            "credits": ""
+        },
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "environment": {
+        "showdashboard": false,
+        "uilayout": "editor-terminal",
+        "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\u001b[m\r\n"
+    },
+    "backend": {
+        "imageid": "go"
+    }
+}
