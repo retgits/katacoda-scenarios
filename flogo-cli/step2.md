@@ -2,7 +2,7 @@ Flogo apps are constructed using a JSON file called `flogo.json`. You can create
 
 The first step is to create the file. To do that, execute `touch flogo.json`{{execute}} in the terminal, which will create a new empty file for you.
 
-Now you can copy the contents below to the newly created flogo.json file. The Flogo app has a REST trigger which listens on port 9233. 
+Now you can copy the contents below to the newly created flogo.json file. The Flogo app has a REST trigger which listens on port 9233. You can click on the code, which will copy it to your clipboard. Now click on `flogo.json` in the editor window and paste.
 ```
 {
   "name": "myApp",
