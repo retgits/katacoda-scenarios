@@ -10,7 +10,7 @@ For this tutorial we'll create a folder in `$GOPATH` to make sure all the comman
 #### flogo.json
 Now let's create the flogo.json file. To do that, execute `touch flogo.json`{{execute}} in the terminal, which will create a new empty file for you.
 
-Now you can copy the contents below to the newly created flogo.json file. The Flogo app has a REST trigger which listens on port 9233. You can click on the code, which will copy it to your clipboard. Now click on `flogo.json` in the editor window and paste.
+Now you can copy the contents below to the newly created flogo.json file. The Flogo app has a REST trigger which listens on port 9233. You can click on the code, which will copy it to your clipboard. Now click on `src -> tutorial -> flogo.json` in the editor window and paste.
 ```
 {
   "name": "myApp",
