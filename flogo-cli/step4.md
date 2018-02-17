@@ -1,4 +1,4 @@
-We have just built the Flogo app, so now we can test it. From the bin directory (`cd bin`{{execute}}) you can run `./myapp`{{execute}} which will start the app. In the terminal you'll see something like
+We have just built the Flogo app, so now we can test it. From the bin directory (`cd $GOPATH/bin`{{execute}}) you can run `./myapp`{{execute}} which will start the app. In the terminal you'll see something like
 
 <pre>
 2018-01-17 14:42:36.060 INFO   [engine] - Engine: Starting...
