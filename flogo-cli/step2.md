@@ -1,12 +1,5 @@
 Flogo apps are constructed using a JSON file called `flogo.json`. You can create those files using the Flogo Web UI, or you can create them manually. 
 
-#### Creating folders
-For this tutorial we'll create a folder in `$GOPATH` to make sure all the commandline tools can access the files we just created.  
-
-`mkdir -p $GOPATH/src/tutorial`{{execute}}
-
-`cd $GOPATH/src/tutorial`{{execute}}
-
 #### flogo.json
 Now let's create the flogo.json file. To do that, execute `touch flogo.json`{{execute}} in the terminal, which will create a new empty file for you.
 

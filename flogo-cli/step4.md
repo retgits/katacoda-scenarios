@@ -10,7 +10,7 @@ We have just built the Flogo app, so now we can test it. From the bin directory 
 2018-05-12 04:34:56.435 INFO   [engine] - Engine Started
 </pre>
 
-To test it we'll use the curl command line tool, which is installed on most Operating Systems. You can start a new terminal window by clicking on the `+` next to Terminal and select `Open New Terminal` from there execute the command `curl http://localhost:9233/test/flogo`{{execute}}. It will send an HTTP request to the app on port 9233 (which was configured in the flogo.json file). In the second terminal you will see the result of the flow (`Hello flogo`) and when you go back to the first terminal you had, you'll see there are additional lines in your window that indicate a flow has been executed
+To test it we'll use the curl command line tool, which is installed on most Operating Systems. You can start a new terminal window by clicking on the `+` next to Terminal and select `Open New Terminal` from there execute the command `curl http://localhost:9233/test/flogo`{{execute}}. It will send an HTTP request to the app on port 9233 (which was configured in the flogo.json file). In the second terminal you will see the result of the flow (`Hello flogo`) and when you go back to the first terminal you had, you'll see there are additional lines in your window that indicate a flow has been executed. Now try it out with your own name and see what happens :)
 
 <pre>
 2018-05-12 04:35:00.632 INFO   [trigger-flogo-rest] - Received request for id 'receive_http_message'
