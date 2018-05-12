@@ -5,6 +5,7 @@ These are the scenarios that can be found on Katacoda to learn different aspects
 
 ## Courses
 * [Getting started with the Flogo Web UI](https://katacoda.com/retgits/scenarios/flogo-webui): Learn how to visually create an ultralight microservice using the Project Flogo Web UI
+* [Getting started with the Flogo CLI](https://katacoda.com/retgits/scenarios/flogo-cli): Learn how to use the Flogo cli to build and test your microservice
 
 ## Resources
 
