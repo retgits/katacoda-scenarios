@@ -10,60 +10,125 @@ For this tutorial we'll create a folder in `$GOPATH` to make sure all the comman
 #### flogo.json
 Now let's create the flogo.json file. To do that, execute `touch flogo.json`{{execute}} in the terminal, which will create a new empty file for you.
 
-Now you can copy the contents below to the newly created flogo.json file. The Flogo app has a REST trigger which listens on port 9233. You can click on the code, which will copy it to your clipboard. Now click on `src -> tutorial -> flogo.json` in the editor window and paste.
+Now you can copy the contents below to the newly created flogo.json file (you can use the **copy to clipboard** option at the bottom of the text field). The Flogo app has a REST trigger which listens on port 9233 and the HTTP path `/test/:name` (where :name is a parameter you can fill in). You can click on the code, which will copy it to your clipboard. Now click on `src -> tutorial -> flogo.json` in the editor window and paste.
 ```
 {
-  "name": "myApp",
+  "name": "Tutorial",
   "type": "flogo:app",
   "version": "0.0.1",
-  "description": "My flogo application description",
+  "appModel": "1.0.0",
   "triggers": [
     {
-      "id": "my_rest_trigger",
+      "id": "receive_http_message",
       "ref": "github.com/TIBCOSoftware/flogo-contrib/trigger/rest",
+      "name": "Receive HTTP Message",
+      "description": "Simple REST Trigger",
       "settings": {
         "port": "9233"
       },
       "handlers": [
         {
-          "actionId": "my_simple_flow",
+          "action": {
+            "ref": "github.com/TIBCOSoftware/flogo-contrib/action/flow",
+            "data": {
+              "flowURI": "res://flow:http_flow"
+            },
+            "mappings": {
+              "input": [
+                {
+                  "mapTo": "name",
+                  "type": "assign",
+                  "value": "$.pathParams.name"
+                }
+              ],
+              "output": [
+                {
+                  "mapTo": "data",
+                  "type": "assign",
+                  "value": "$.greeting"
+                },
+                {
+                  "mapTo": "code",
+                  "type": "literal",
+                  "value": 200
+                }
+              ]
+            }
+          },
           "settings": {
             "method": "GET",
-            "path": "/test"
+            "path": "/test/:name"
           }
         }
       ]
     }
   ],
-  "actions": [
+  "resources": [
     {
-      "id": "my_simple_flow",
-      "ref": "github.com/TIBCOSoftware/flogo-contrib/action/flow",
+      "id": "flow:http_flow",
       "data": {
-        "flow": {
-          "attributes": [],
-          "rootTask": {
-            "id": 1,
-            "type": 1,
-            "tasks": [
-              {
-                "id": 2,
-                "type": 1,
-                "activityRef": "github.com/TIBCOSoftware/flogo-contrib/activity/log",
-                "name": "log",
-                "attributes": [
+        "name": "HTTPFlow",
+        "metadata": {
+          "input": [
+            {
+              "name": "name",
+              "type": "string"
+            }
+          ],
+          "output": [
+            {
+              "name": "greeting",
+              "type": "string"
+            }
+          ]
+        },
+        "tasks": [
+          {
+            "id": "log_2",
+            "name": "Log Message",
+            "description": "Simple Log Activity",
+            "activity": {
+              "ref": "github.com/TIBCOSoftware/flogo-contrib/activity/log",
+              "input": {
+                "message": "",
+                "flowInfo": "false",
+                "addToFlow": "false"
+              },
+              "mappings": {
+                "input": [
                   {
-                    "name": "message",
-                    "value": "Simple Log",
-                    "type": "string"
+                    "type": "expression",
+                    "value": "string.concat(\"Hello \", $flow.name)",
+                    "mapTo": "message"
                   }
                 ]
               }
-            ],
-            "links": [
-            ]
+            }
+          },
+          {
+            "id": "actreturn_3",
+            "name": "Return",
+            "description": "Simple Return Activity",
+            "activity": {
+              "ref": "github.com/TIBCOSoftware/flogo-contrib/activity/actreturn",
+              "input": {
+                "mappings": [
+                  {
+                    "type": "expression",
+                    "value": "string.concat(\"Hello \", $flow.name)",
+                    "mapTo": "greeting"
+                  }
+                ]
+              }
+            }
           }
-        }
+        ],
+        "links": [
+          {
+            "from": "log_2",
+            "to": "actreturn_3"
+          }
+        ]
       }
     }
   ]

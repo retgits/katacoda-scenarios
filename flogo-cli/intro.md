@@ -6,4 +6,7 @@ Project Flogo provides two different command-line interfaces and which you need 
 In this tutorial you will learn how to use the first of the two CLI tools
 
 #### Help
-If at any point in time you get stuck with Flogo, the Web UI or have any questions, please feel free to open an [issue on GitHub](https://github.com/TIBCOSoftware/flogo/issues)
+If you have any questions, feel free to post an [issue on GitHub](https://github.com/TIBCOSoftware/flogo/issues) and tag it as a question, email `flogo-oss@tibco.com` or chat with the team and community:
+
+* The [project-flogo/Lobby](https://gitter.im/project-flogo/Lobby?utm_source=share-link&utm_medium=link&utm_campaign=share-link) Gitter channel should be used for general discussions, start here for all things Flogo!
+* The [project-flogo/developers](https://gitter.im/project-flogo/developers?utm_source=share-link&utm_medium=link&utm_campaign=share-link) Gitter channel should be used for developer/contributor focused conversations. 
