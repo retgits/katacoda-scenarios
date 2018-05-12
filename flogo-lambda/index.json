@@ -1,0 +1,49 @@
+{
+    "icon": "fa-golang",
+    "pathwayTitle": "Project Flogo",
+    "title": "Deploy a Flogo app to AWS Lambda",
+    "description": "Learn how to use the Flogo to deploy an app to AWS Lambda",
+    "difficulty": "beginner",
+    "time": "5 - 15 minutes",
+    "details": {
+        "steps": [
+            {
+                "title": "Go get Flogo",
+                "text": "step1.md"
+            },
+            {
+                "title": "Create a flogo.json",
+                "text": "step2.md"
+            },
+            {
+                "title": "Build the Flogo app",
+                "text": "step3.md"
+            },
+            {
+                "title": "Deploy to AWS Lambda",
+                "text": "step4.md"
+            }
+            ,
+            {
+                "title": "Tryit out!",
+                "text": "step5.md"
+            }
+        ],
+        "intro": {
+            "text": "intro.md",
+            "code": "introCode.sh",
+            "credits": ""
+        },
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "environment": {
+        "showdashboard": false,
+        "uilayout": "editor-terminal",
+        "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\u001b[m\r\n"
+    },
+    "backend": {
+        "imageid": "go"
+    }
+}
