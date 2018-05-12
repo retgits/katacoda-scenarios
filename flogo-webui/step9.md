@@ -11,4 +11,4 @@ chmod +x <appname>
 ```
 
 #### Running your app
-To run your app simply execute the app from a terminal and you'll not only see the output of the log step, but you'll see the same in your browser window as well. The URL on which our microservice will listen should be `http://localhost:8080/helloworld` (or might be different if you made changes in the previous steps). To stop your app simply close the terminal window in which you started the app or press **ctrl + c**
+To run your app simply execute the app from a terminal and you'll not only see the output of the log step, but you'll see the same in your browser window as well. The URL on which our microservice will listen should be `http://localhost:9233/test/:name` (or might be different if you made changes in the previous steps). If you're running it on your machine you can open a browser window and go to `http://localhost:9233/test/flogo` to see what the output was (spoiler alert: you'll see `"Hello flogo"` in your web browser). To stop your app simply close the terminal window in which you started the app or press **ctrl + c**
