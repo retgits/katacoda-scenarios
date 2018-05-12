@@ -1,0 +1,7 @@
+In this step we'll construct the source code for the Flogo app from the flogo.json as well as create the app!
+
+To create the source code simply execute `flogo create -f flogo.json myapp`{{execute}}. This tells the flogo cli to take the flogo.json file and create the source for the app in a folder called `myapp`. It will also download a few Go packages that the app will need.
+
+The next step is to build the executable and for that we need to be in the directory `myapp` (`cd myapp`{{execute}}). To build a flogo app from the source that you can run on AWS Lambda we'll need to execute a command that is very similar to the one we had in the [cli tutorial](https://www.katacoda.com/retgits/scenarios/flogo-cli), but with some added parameters. The command you need to run is `flogo build -e -shim start_flow_as_a_function_in_lambda`{{execute}}, which tells the flogo cli to build the app as an embedded application (the -e option) and with a target shim (the -shim option which uses the trigger id). The AWS Lambda trigger leverages a makefile to kick off the build process, which simply builds your Flogo application using the Lambda trigger shim and zips the binary for deployment to AWS Lambda.
+
+Once this command finishes successfully the zip file (handler.zip) will be in the `src` directory (`/home/scrapbook/tutorial/myapp/src/myapp`).

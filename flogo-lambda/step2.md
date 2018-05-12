@@ -3,7 +3,7 @@ Flogo apps are constructed using a JSON file called `flogo.json`. You can create
 #### flogo.json
 Now let's create the flogo.json file. To do that, execute `touch flogo.json`{{execute}} in the terminal, which will create a new empty file for you.
 
-Now you can copy the contents below to the newly created flogo.json file (you can use the **copy to clipboard** option at the bottom of the text field). The Flogo app has a REST trigger which listens on port 9233 and the HTTP path `/test/:name` (where :name is a parameter you can fill in). You can click on the code, which will copy it to your clipboard. Now click on `flogo.json` in the editor window and paste.
+Now you can copy the contents below to the newly created flogo.json file (you can use the **copy to clipboard** option at the bottom of the text field). The Flogo app has a Lambda trigger which can be triggered by any event supported by AWS Lambda. You can click on the code, which will copy it to your clipboard. Now click on `flogo.json` in the editor window and paste.
 ```
 {
   "name": "Tutorial",
@@ -12,26 +12,24 @@ Now you can copy the contents below to the newly created flogo.json file (you ca
   "appModel": "1.0.0",
   "triggers": [
     {
-      "id": "receive_http_message",
-      "ref": "github.com/TIBCOSoftware/flogo-contrib/trigger/rest",
-      "name": "Receive HTTP Message",
-      "description": "Simple REST Trigger",
-      "settings": {
-        "port": "9233"
-      },
+      "id": "start_flow_as_a_function_in_lambda",
+      "ref": "github.com/TIBCOSoftware/flogo-contrib/trigger/lambda",
+      "name": "Start Flow as a function in Lambda",
+      "description": "Simple Lambda Trigger",
+      "settings": {},
       "handlers": [
         {
           "action": {
             "ref": "github.com/TIBCOSoftware/flogo-contrib/action/flow",
             "data": {
-              "flowURI": "res://flow:http_flow"
+              "flowURI": "res://flow:lambda_flow"
             },
             "mappings": {
               "input": [
                 {
                   "mapTo": "name",
                   "type": "assign",
-                  "value": "$.pathParams.name"
+                  "value": "$.evt.name"
                 }
               ],
               "output": [
@@ -39,18 +37,9 @@ Now you can copy the contents below to the newly created flogo.json file (you ca
                   "mapTo": "data",
                   "type": "assign",
                   "value": "$.greeting"
-                },
-                {
-                  "mapTo": "code",
-                  "type": "literal",
-                  "value": 200
                 }
               ]
             }
-          },
-          "settings": {
-            "method": "GET",
-            "path": "/test/:name"
           }
         }
       ]
@@ -58,9 +47,9 @@ Now you can copy the contents below to the newly created flogo.json file (you ca
   ],
   "resources": [
     {
-      "id": "flow:http_flow",
+      "id": "flow:lambda_flow",
       "data": {
-        "name": "HTTPFlow",
+        "name": "LambdaFlow",
         "metadata": {
           "input": [
             {
@@ -71,7 +60,7 @@ Now you can copy the contents below to the newly created flogo.json file (you ca
           "output": [
             {
               "name": "greeting",
-              "type": "string"
+              "type": "any"
             }
           ]
         },
@@ -107,9 +96,9 @@ Now you can copy the contents below to the newly created flogo.json file (you ca
               "input": {
                 "mappings": [
                   {
-                    "type": "expression",
-                    "value": "string.concat(\"Hello \", $flow.name)",
-                    "mapTo": "greeting"
+                    "mapTo": "greeting",
+                    "type": "object",
+                    "value": {"Hello": "{{$flow.name}}"}
                   }
                 ]
               }
