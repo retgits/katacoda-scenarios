@@ -1,19 +1,20 @@
 In this tutorial you will learn how to use the Project Flogo Web UI and build ultralight microservices.
 
 #### Let's get started!
-If you've never heard of Flogo before, you might be wondering what it is. Flogo is
+If you've never heard of Flogo before, you might be wondering what it is. Project Flogo is an open source framework to simplify building efficient & modern serverless functions and edge microservices. Some of the highlights include
 
-* **_Ultra light_**: Up to 20 to 50 times lighter than Node.js and Java® Dropwizard
-* **_built for the Edge_**: Running on devices, as functions and as super small exectables
-* **_a Framework_**: Giving you the ability to  use, modify, and contribute to your heart's content
-
-So Flogo is an Ultra light Edge Microservices Framework!
+🎈 **Ultra-light process engine** 20x-50x lighter than Java or NodeRed <br/>
+🌈 **Painless development** Visual modeler & elegant DSL <br/>
+⚡️ **Event driven** by design for Function as a Service (FaaS) <br/>
+⚙️ **Edge deployment model** Static binaries for painless edge deployments <br/>
+🏘 **Extensible & reusable** by design to build your own apps, frameworks & platforms <br/>
+🎉 **100% Open Source** for your dev & hacking pleasure<br/>
 
 #### Components of Flogo
-Flogo has a Web UI, which we'll use in this tutorial as well as two different command-line interfaces and which you need depends on the task you need to execute.
-
-* flogo: This CLI gives you the ability to build flows and microservices.
-* flogogen: If you’re looking to extend the functionality that Flogo offers out of the box, this is the tool you want to use.
+There are several components for Flogo, and for this tutorial we'll use the Web UI.
 
 #### Help
-If at any point in time you get stuck with Flogo, the Web UI or have any questions, please feel free to open an [issue on GitHub](https://github.com/TIBCOSoftware/flogo/issues)
+If you have any questions, feel free to post an [issue on GitHub](https://github.com/TIBCOSoftware/flogo/issues) and tag it as a question, email `flogo-oss@tibco.com` or chat with the team and community:
+
+* The [project-flogo/Lobby](https://gitter.im/project-flogo/Lobby?utm_source=share-link&utm_medium=link&utm_campaign=share-link) Gitter channel should be used for general discussions, start here for all things Flogo!
+* The [project-flogo/developers](https://gitter.im/project-flogo/developers?utm_source=share-link&utm_medium=link&utm_campaign=share-link) Gitter channel should be used for developer/contributor focused conversations. 
