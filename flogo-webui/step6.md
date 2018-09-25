@@ -1,4 +1,0 @@
-Because we do want to send some information back when our service is invoked, we need a flow parameter.
-
-#### Add Flow params
-To add a new flow parameter, click on the ligtht blue box called `Input Output` (rigt in between the trigger and the really big plus sign). By default you'll start off in the input section. This section is used to define which parameters your flow will have, which you can use later on. In the input section type _name_ in the box where it says _parameter name_ and leave the type as `string`. This will tell your flow that you'll have an input parameter called name of type string. Now click on `output` and type _greeting_ in the box where it says _parameter name_ and leave the type as `string`. This will tell your flow that the trigger will get some data back from your flow that it should return the to app calling the trigger. To save everything, click the big blue **save** button to complete this step.

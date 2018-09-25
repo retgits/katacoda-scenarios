@@ -1,4 +1,0 @@
-After you launch the Flogo Web UI (through either https://[[HOST_SUBDOMAIN]]-3303-[[KATACODA_HOST]].environments.katacoda.com/ or using the `Web UI` tab from the console), you're greeted by Flynn (the hummingbird) and you'll see a list of all your apps you have designed.
-
-#### A new app
-To create a new microservice app, simply click on the big blue button `new` and select **Microservice** as the profile. A new app will be created for you and at the top of the screen you can give the app a name and an optional description. The name of the app will also be used as the name of the executable later on, so you should use a meaningful name.
