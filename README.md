@@ -1,4 +1,7 @@
 # Learning Flogo on Katacoda
+
+_These scenarios are no longer maintained. If you want to learn Flogo in a fun way, check out the [Flogo Labs](https://tibcosoftware.github.io/flogo/labs/)_
+
 ## Because cats and birds can totally be friends!
 
 These are the scenarios that can be found on Katacoda to learn different aspects of [Project Flogo](http://flogo.io)
